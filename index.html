@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <style type="text/css" media="all">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body {
+    width: min(100%, 800px);
+    margin: 0 auto;
+}
+
+.sec1 {
+    background-image: linear-gradient(#00000036, #0000003a), url('./smile.jpg');
+    background-position: right;
+    background-size: cover;
+    padding: 8rem 3rem;
+    display: flex;
+    color: #f3f3f3;
+    justify-content: left;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.sec1 div {
+    width: min(400px, 100%);
+}
+
+.sec1 div h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 3rem 0;
+}
+
+.sec1 div p {
+    margin: 3rem 0;
+    text-align: center;
+    color: #fbff07;
+    font-size: 1.5rem;
+}
+
+.sec2 {
+    padding: 3rem;
+    box-shadow: 0 0 5px #b3b3b3;
+}
+
+.sec2 p, .sec2 span {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #008100;
+}
+
+.sec2 h2 {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.sec2 ul {
+    margin: 0 auto;
+}
+
+.sec2 ul li {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    list-style: inside;
+}
+
+.sec3 {
+    margin: 3rem 0;
+}
+
+.sec3 h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#intro {
+   font-weight: 350;
+   font-size: 1.2rem;
+   line-height: 45px;
+   line-height: 45px;
+   padding: 2rem;
+}
+
+.img {
+   width: 100%;
+   margin: 5rem auto;
+   padding: 1rem;
+}
+
+.img img {
+   width: 100%;
+   border-radius: 7px;
+}
+
+.testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 4rem 0;
+}
+
+.disclaimer {
+   background: black;
+   color: #a9a9a9;
+}
+
+.testimonials div {
+    width: 47%;
+    margin: 2% 1.5%;
+}
+
+.testimonials img {
+    display: block;
+    width: 100%;
+}
+
+.video {
+   width: 100%;
+}
+
+.video iframe {
+   width: 100%;
+}
+
+.sec4 {
+    margin: 3rem 0;
+    background-color: #252525;
+    padding: 3rem;
+}
+
+.sec4 p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ff0303;
+    margin: 4rem 0 2rem 0;
+}
+
+.sec4 ul li {
+    font-size: 1rem;
+    margin: 1rem 0;
+    list-style: inside;
+    color: #b3b3b3;
+}
+
+.sec5 {
+    padding: 4rem;
+    background-color: #d1d1d1;
+}
+
+.sec5 h1 {
+    color: #252525;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+}
+
+.sec5 ul li {
+    font-size: 1rem;
+    margin: 1.2rem 0;
+    list-style: inside;
+    line-height: 1.5rem;
+    color: #252525;
+}
+
+.sec5 ul li p {
+    padding: 1rem;
+    text-align: center;
+    background-color: #bdbbbb;
+    margin: 5px 0;
+    text-align: left;
+    border-radius: 7px;
+}
+
+.add1 {
+   text-align: center;
+   margin: 4rem 0;
+   padding: 2rem 1.2rem;
+}
+
+.sec6 {
+    margin: 5rem 0;
+}
+
+.sec6 h3 {
+    text-align: left;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: #1fbe1c;
+    display: block;
+    width: min(90%, 600px);
+    border-radius: 7px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 5px 5px #7e7e7e;
+    padding: 1rem 0;
+}
+
+a h2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+a p {
+    color: black;
+}
+
+#lastvideo {
+    background: none;
+    text-decoration: underline;
+    padding: 0;
+    box-shadow: none;
+    text-align: left;
+    color: blue;
+}
+
+.showup {
+    display: none;
+}
+
+.showmore {
+    padding: 3px 5px;
+    color: #ececec;
+    display: block;
+    width: auto;
+    background-color: #525252;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+}
+
+@media only screen and (max-width: 680px) {
+    .sec1 {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sec1 {
+        background-position: center;
+        justify-content: center;
+        padding: 8rem 1rem;
+    }
+
+    .sec1 div h3 {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    
+    .sec1 div p {
+        margin: 1.2rem 0;
+        font-size: 15px;
+    }
+
+    .sec2 {
+        padding: 3rem 1rem;
+    }
+
+    .sec2 p, .sec2 span {
+        font-size: 1.5rem;
+    }
+
+    .sec2 ul li {
+        font-size: 1rem;
+    }
+
+    .testimonials {
+        flex-flow: column wrap;
+        margin: 3rem 0;
+    }
+
+    .testimonials div {
+        width: 95%;
+        margin: 2rem 1.5%;
+    }
+
+    .sec4 {
+        padding: 2rem 1rem;
+    }
+
+    #sec4btn {
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .sec5 {
+        padding: 3rem 0.6rem;
+    }
+
+    mark {
+        padding: 0;
+    }
+}
+    </style>
+    <title>Affiliate Income Pilot</title>
+</head>
+<body>
+    <div class="sec1">
+        <div>
+            <h3>
+               FREE TRAINING REVEALS
+THE GOLDEN STRATEGY TO MAKE AT LEAST $100 WEEKLY WITHOUT OWNING A PRODUCT
+            </h3>
+        </div>
+    </div>
+    <div class="body">
+        <div class="sec3">
+            <h1 id="intro">
+                In the next 3 minutes,I will be showing you undeniable proofs about this strategy which no one is never going to let you know 
+            </h1>
+            <div class="img">
+                <div>
+                    <img src="./img1.jpg" alt="image">
+                </div>
+            </div>
+    
+            <a href="https://wa.link/7zsyia">
+                <h2>join now</h2>
+            </a>
+            
+            <h2 style="text-align: center; margin-top: 4rem">Results from my students</h2>
+            <div class="testimonials">
+                <div>
+                    <img src="./img2.jpg" alt="testimonials">
+                </div>
+                <div>
+                    <img src="./img3.jpg" alt="testimonials">
+                </div>
+            </div>
+    
+            <a href="https://wa.link/7zsyia">
+                <h2>join now</h2>
+            </a>
+        </div> 
+        <div class="sec4">
+            <p>
+                This training is for you if :
+            </p>    
+            <div>
+                <ul>
+                    <li
+                    >
+                     You are a 9-5 worker but still cannot boast of #10,000 monthly savings.</li>
+                    <li>
+                    Looking for a model to scale up your finance.  
+                    </li>
+                    <li>You are still a student.</li>
+                    <li>
+                    Looking for a business that will generate you income profitably online.
+                    </li>
+                </ul>
+        </div>
+              <p>
+                 ALL YOU NEED IS :
+              </p>
+              <div>
+                 <ul>
+                    <li>Your smart phone</li>
+                    <li>
+                       internet access
+                    </li>
+                    <li>
+                       right mindset and determination
+                    </li>
+                 </ul>
+              </div>
+              <p>
+                 WHAT YOU WILL GET FROM THIS TRAINING :
+              </p>
+              <div>
+                 <ul>
+                    <li>
+                       The proven model to generate income online
+                    </li>
+                    <li>
+                       Online income strategies which no one will tell you about
+                    </li>
+                    <li> Emotional barriers and how to overcome them
+                    </li>
+                   <li>
+                      How to use what you have right now to get what you want
+                   </li>
+                   <li>
+                      How to get started on the financial journey profitably and lots more
+                   </li>
+                 </ul>
+              </div>
+     </div>
+     
+     <div class="sec3">
+            <h1 id="intro">
+               Results from my students
+            </h1>
+            <div class="testimonials">
+                <div>
+                    <img src="./img4.jpg" alt="testimonials">
+                </div>
+                <div>
+                    <img src="./img5.jpg" alt="testimonials">
+                </div>
+                <div>
+                    <img src="./img6.jpg" alt="testimonials">
+                </div>
+                <div>
+                    <img src="./img7.jpg" alt="testimonials">
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="add1">
+       Group is getting filled up already as many people have been waiting for this rare opportunity 🔥🔥.
+Grab your seat now or you MISS this opportunity forever 📌
+You snooze, you loose 📍
+    </div>
+      <a href="https://wa.link/7zsyia">
+                <h2>join now</h2></a>
+    <div class="add1 disclaimer">
+      This Site Is Not A Part Of The Facebook Website Or Facebook Inc. Additionally, This Site Is Not Endorsed By Facebook In Any Way. FACEBOOK Is A Trademark Of FACEBOOK, Inc.
+   <br /><br />
+©2023 - MedLyn HQ - All Right Reserved
+    </div>
+</body>
+</html>
